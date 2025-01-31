@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+      
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="formulario.html">Formulário</a>
+    </nav>
+
+    <!-- Formulário -->
+    <div class="form-container">
+        <h2>Cadastro de Usuário</h2>
+        <form action="processar.php" method="post">
+
+            <!-- Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <!-- Data -->
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data" required>
+            </div>
+
+            <!-- Senha -->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+
+            <!-- País -->
+            <div class="form-group">
+                <label for="pais">Informe seu país:</label>
+                <select name="pais" id="pais" required>
+                    <option value="brazil">Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="eua">EUA</option>
+                    <option value="inglaterra">Inglaterra</option>
+                </select>
+            </div>
+
+            <!-- Gênero -->
+            <div class="form-group">
+                <label>Informe seu gênero:</label>
+                <div class="radio-group">
+                    <input type="radio" name="genero" value="masculino" id="masculino" required>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" name="genero" value="feminino" id="feminino" required>
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" name="genero" value="outro" id="outro" required>
+                    <label for="outro">Outro</label>
+                </div>
+            </div>
+
+            <!-- Aceite dos Termos -->
+            <div class="form-group">
+                <input type="checkbox" name="termos" id="termos" required>
+                <label for="termos">Aceitar termos e condições</label>
+            </div>
+
+            <!-- Mensagens Adicionais -->
+            <div class="form-group">
+                <label for="mensagens">Mensagens Adicionais:</label>
+                <textarea name="mensagens" id="mensagens" rows="4"></textarea>
+            </div>
+
+            <!-- Botões -->
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
